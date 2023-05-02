@@ -25,7 +25,13 @@ public class Cab_invoice {
             count++;
         }
 
+
         totalFare = (totalDistance * costPerKm) + totalTime + (minFare * count);
+
+        double averageFair = totalFare/count;
+
         System.out.println("Total Fare is = " + totalFare);
+        System.out.println("Total Number of Rides = "+count);
+        System.out.println("Average Fare per ride = "+averageFair);
     }
     }
